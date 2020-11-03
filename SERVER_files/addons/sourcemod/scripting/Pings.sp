@@ -54,7 +54,9 @@ public void OnMapStart()
 	g_iBeamSprite = PrecacheModel("materials/sprites/laserbeam.vmt");
 	g_iHaloSprite = PrecacheModel("materials/sprites/glow01.vmt");
 	
+	AddFileToDownloadsTable("sound/galaxy/ping.wav");
 	PrecacheSound("galaxy/ping.wav");
+	AddFileToDownloadsTable("sound/galaxy/ping2.wav");
 	PrecacheSound("galaxy/ping2.wav");
 }
 
