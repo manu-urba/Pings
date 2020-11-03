@@ -1,0 +1,20 @@
+"Phrases"
+{
+	"your team cant use pings"
+	{
+		"en"	"You can't use pings in this team."
+		"it"	"Non puoi usare i ping in questo team."
+	}
+	
+	"cant ping while dead"
+	{
+		"en"	"You can't use pings if you're dead."
+		"it"	"Non puoi usare i ping se sei morto."
+	}
+	
+	"dont spam pings"
+	{
+		"en"	"Please stop spamming"
+		"it"	"Per favore non spammare"
+	}
+}
