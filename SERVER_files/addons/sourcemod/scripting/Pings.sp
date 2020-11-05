@@ -46,12 +46,15 @@ int g_iOldButtons[MAXPLAYERS + 1];
 
 ConVar cv_iRestrictedTeam;
 ConVar cv_sMessagePrefix;
+ConVar cv_bRenderThroughWalls;
 
 char g_sMessagePrefix[PREFIX_MAXLENGTH];
 
 public void OnMapStart()
 {
-	g_iBeamSprite = PrecacheModel("materials/sprites/laserbeam.vmt");
+	AddFileToDownloadsTable("materials/sprites/galaxy/laser_ignorez.vmt");
+	
+	g_iBeamSprite = PrecacheModel(cv_bRenderThroughWalls.BoolValue ? "materials/sprites/galaxy/laser_ignorez.vmt" : "materials/sprites/glow01.vmt");
 	g_iHaloSprite = PrecacheModel("materials/sprites/glow01.vmt");
 	
 	AddFileToDownloadsTable("sound/galaxy/ping.wav");
@@ -71,6 +74,7 @@ public void OnPluginStart()
 	AutoExecConfig_SetFile("Pings");
 	cv_iRestrictedTeam = AutoExecConfig_CreateConVar("sm_pings_team", "0", "Which team is allowed to use pings? (0 = ALL, 1 = Terrorists (CSGO), 2 = Counter-Terrorists (CSGO))", FCVAR_NOTIFY, true, _, true, 2.0);
 	cv_sMessagePrefix = AutoExecConfig_CreateConVar("sm_pings_prefix", "{darkblue}[{blue}Pings{darkblue}]{lightgreen} ", "Plugin prefix for messages");
+	cv_bRenderThroughWalls = AutoExecConfig_CreateConVar("sm_pings_walls_render", "1", "Render pings through walls?");
 	AutoExecConfig_ExecuteFile();
 	AutoExecConfig_CleanFile();
 	
