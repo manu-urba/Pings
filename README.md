@@ -17,6 +17,11 @@ sm_pings_prefix "{darkblue}[{blue}Pings{darkblue}]{lightgreen} "
 // Minimum: "0.000000"
 // Maximum: "2.000000"
 sm_pings_team "0"
+
+// Render pings through walls?
+// -
+// Default: "1"
+sm_pings_walls_render "1"
 ```
 
 ## Screenshots
