@@ -4,17 +4,20 @@
 	{
 		"en"	"You can't use pings in this team."
 		"it"	"Non puoi usare i ping in questo team."
+		"ru"	"Вы не можете использовать пинги в этой команде."
 	}
 	
 	"cant ping while dead"
 	{
 		"en"	"You can't use pings if you're dead."
 		"it"	"Non puoi usare i ping se sei morto."
+		"ru"	"Вы не можете использовать пинги, если вы мертвы."
 	}
 	
 	"dont spam pings"
 	{
 		"en"	"Please stop spamming"
 		"it"	"Per favore non spammare"
+		"ru"	"Пожалуйста, прекратите спамить"
 	}
 }
