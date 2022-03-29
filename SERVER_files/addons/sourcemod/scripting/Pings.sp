@@ -25,10 +25,11 @@
 #include <sourcemod>
 #include <sdktools>
 #include <autoexecconfig>
-#include <cstrike>
 #include <colorlib>
 
 #define PREFIX_MAXLENGTH 128
+#define CS_TEAM_T 2
+#define CS_TEAM_CT 3
 
 public Plugin myinfo = 
 {
